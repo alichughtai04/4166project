@@ -1,0 +1,123 @@
+/* Basic CSS for the item detail page */
+html, body {
+    height: 100%; /* Ensure full viewport height */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #efeeee, #d4d4d4);
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 4px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    height: 60px;
+    border-radius: 35%;
+}
+
+.search-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 25%; 
+    max-width: 600px; 
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid #575757;
+    background-color: #575757;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-detail-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.item-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-details h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.item-details p {
+    margin: 5px 0;
+}
+
+.item-buttons {
+    margin-top: 20px;
+}
+
+.item-buttons .button {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.item-buttons .button:hover {
+    background-color: #575757;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2px 0;
+    position: relative;
+    margin-top: auto;
+}
